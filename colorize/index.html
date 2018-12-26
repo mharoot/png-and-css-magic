@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title> Colorize PNG with CSS</title>
+        <style>
+            img {
+                position: absolute;
+                width:1000px;
+                height:1000px;
+            }
+
+            .texture {
+                display: block;
+                z-index:0;
+            }
+
+            .MASK {
+                display: block; 
+                opacity: 1; 
+                mix-blend-mode: hard-light; 
+                z-index: 3
+            }
+
+            .CLASS2 {
+                z-index:2;
+                background: #000000;
+                opacity: 1; 
+                mix-blend-mode: overlay;  
+            }
+
+            .CLASS3 {
+                z-index:3;
+                background: #ffffff;
+                opacity: 1; 
+                mix-blend-mode: overlay;
+            }
+
+            .CLASS4 {
+                z-index:4;
+                background: #696942;
+                opacity: 1; 
+                mix-blend-mode: overlay;
+            }
+
+            .HL {
+                display: block; 
+                opacity: 1; 
+                mix-blend-mode: hard-light;                     
+                z-index: 1;
+            }
+
+            ._3D { 
+                display: block; 
+                opacity: 1; 
+                mix-blend-mode: hard-light; 
+                z-index: 1;
+            }
+
+            .aging {
+                display: block; 
+                opacity: 1; 
+                mix-blend-mode: hard-light; 
+                z-index: 4;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img  src="./assets/3C_ASD102312680_3D.jpg"            title="3D"    class="_3D">
+        <img  src="./assets/3C_ASD102312680_CLASS2_2k_spr.png" title="CLASS2"      class="CLASS2">
+        <img  src="./assets/3C_ASD102312680_CLASS3_2k_spr.png" title="CLASS3"      class="CLASS3">
+        <img  src="./assets/3C_ASD102312680_CLASS4_2k_spr.png" title="CLASS4"      class="CLASS4">
+        <img  src="./assets/3C_ASD102312680_HL.jpg"            title="HL"          class="HL">
+        <img  src="./assets/texture_2k.jpg"                    title="texture"     class="texture">
+        <img  src="./assets/3C_ASD102312680_MASK.png"          title="MASK"        class="MASK"> 
+        
+    </body>
+</html>
