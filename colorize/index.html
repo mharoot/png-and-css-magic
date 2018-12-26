@@ -2,43 +2,81 @@
     <head>
         <title> Colorize PNG with CSS</title>
         <style>
-            img {
-                position: absolute;
-                width:1000px;
-                height:1000px;
-            }
-
-            .texture {
+            #room1image {
+                z-index: 5;
                 display: block;
-                z-index:0;
+                position: absolute;
+                width:975.942px; 
+                height:512.861px;
+                margin-left: 35.805px; 
+                margin-top: 16.1526px; 
+                background-image: url("/assets/Room1.png"); 
+                background-size: 975.942px 512.861px;
             }
 
             .MASK {
-                display: block; 
+                z-index: 3;
+
+                display: block;
+
                 opacity: 1; 
-                mix-blend-mode: hard-light; 
-                z-index: 3
+                mix-blend-mode: hard-light;
+
+                background-repeat: repeat; 
+                position: absolute; 
+                margin-left: 35.805px; 
+                margin-top: 16.1526px; 
+                width: 975.942px; 
+                height: 512.861px;
+                background-image: url("/assets/3C_ASD102312680_CLASS4_2k_spr.png"); 
+                background-size: 89px 89px;
             }
 
             .CLASS2 {
                 z-index:2;
                 background: #000000;
                 opacity: 1; 
-                mix-blend-mode: overlay;  
+                mix-blend-mode: overlay;
+                background-repeat: repeat; 
+                position: absolute; 
+                margin-left: 35.805px; 
+                margin-top: 16.1526px; 
+                width: 975.942px; 
+                height: 512.861px;
+                background-image: url("/assets/3C_ASD102312680_CLASS2_2k_spr.png"); 
+                background-size: 89px 89px; 
             }
 
             .CLASS3 {
                 z-index:3;
                 background: #ffffff;
+                
                 opacity: 1; 
                 mix-blend-mode: overlay;
+                background-repeat: repeat; 
+                position: absolute; 
+                margin-left: 35.805px; 
+                margin-top: 16.1526px; 
+                width: 975.942px; 
+                height: 512.861px;
+                background-image: url("/assets/3C_ASD102312680_CLASS3_2k_spr.png"); 
+                background-size: 89px 89px;
             }
 
             .CLASS4 {
                 z-index:4;
                 background: #696942;
+                
                 opacity: 1; 
                 mix-blend-mode: overlay;
+                background-repeat: repeat; 
+                position: absolute; 
+                margin-left: 35.805px; 
+                margin-top: 16.1526px; 
+                width: 975.942px; 
+                height: 512.861px;
+                background-image: url("/assets/3C_ASD102312680_CLASS4_2k_spr.png"); 
+                background-size: 89px 89px;
             }
 
             .HL {
@@ -48,12 +86,6 @@
                 z-index: 1;
             }
 
-            ._3D { 
-                display: block; 
-                opacity: 1; 
-                mix-blend-mode: hard-light; 
-                z-index: 1;
-            }
 
             .aging {
                 display: block; 
@@ -62,16 +94,40 @@
                 z-index: 4;
             }
 
+            .threeD {
+                display: block; 
+                opacity: 1; 
+                mix-blend-mode: hard-light; 
+                background-repeat: repeat; 
+                position: absolute; 
+                z-index: 1; 
+                margin-left: 35.805px; 
+                margin-top: 16.1526px; 
+                width: 975.942px; 
+                height: 512.861px;
+                background-image: url("/assets/3C_ASD102312680_3D.jpg"); 
+                background-size: 89px 89px;
+            }
+
+
+            .texture {
+                background-image: url("/assets/texture_2k.jpg"); 
+                display: block;
+                z-index:0;
+            }
+
+
+
         </style>
     </head>
     <body>
-        <img  src="./assets/3C_ASD102312680_3D.jpg"            title="3D"    class="_3D">
-        <img  src="./assets/3C_ASD102312680_CLASS2_2k_spr.png" title="CLASS2"      class="CLASS2">
-        <img  src="./assets/3C_ASD102312680_CLASS3_2k_spr.png" title="CLASS3"      class="CLASS3">
-        <img  src="./assets/3C_ASD102312680_CLASS4_2k_spr.png" title="CLASS4"      class="CLASS4">
-        <img  src="./assets/3C_ASD102312680_HL.jpg"            title="HL"          class="HL">
-        <img  src="./assets/texture_2k.jpg"                    title="texture"     class="texture">
-        <img  src="./assets/3C_ASD102312680_MASK.png"          title="MASK"        class="MASK"> 
-        
+        <div class="CLASS2"></div>
+        <div class="CLASS3"></div>
+        <div class="CLASS4"></div>
+        <div class="HL"></div>
+        <div class="MASK"></div>
+        <div class="texture"></div>
+        <div class="threeD"></div>
+        <div id="room1image"></div>
     </body>
 </html>
