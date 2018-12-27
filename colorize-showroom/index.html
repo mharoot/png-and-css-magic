@@ -1,0 +1,188 @@
+<style>
+#room1image {
+    height: 786.258px; 
+    margin-left: 54.88px; 
+    margin-top: 24.7579px;
+    position: absolute; 
+    width: 1495.87px; 
+}
+
+/* z-index = 0 */
+#CLASS2 {
+    z-index:0;
+
+    /* background: #6F8758; */
+    background: #DEC657;
+    background-image: url("/assets/3C_ASD90491013_CLASS2_spr.png"); 
+    background-repeat: repeat; 
+    background-size: 137px 137px; 
+    
+    margin-left: 54.88px; 
+    margin-top: 24.7579px; 
+    mix-blend-mode: overlay;
+    opacity: 1; 
+    position: absolute; 
+    
+    width: 1495.87px; 
+    height: 786.258px;
+
+}
+
+#CLASS3 {
+    z-index:0;
+    
+    background: #C7BA7B;
+    background-image: url("/assets/3C_ASD90491013_CLASS3_spr.png"); 
+    background-repeat: repeat; 
+    background-size: 137px 137px;
+    
+    margin-left: 54.88px; 
+    margin-top: 24.7579px; 
+    mix-blend-mode: overlay;
+    opacity: 1; 
+    position: absolute; 
+
+    width: 1495.87px; 
+    height: 786.258px;
+
+}
+
+#CLASS4 {
+    z-index:0;
+
+    background: #6F8758;
+    /* background: #DEC657; */
+    background-image: url("/assets/3C_ASD90491013_CLASS4_spr.png"); 
+    background-repeat: repeat; 
+    background-size: 137px 137px;
+    
+    margin-left: 54.88px; 
+    margin-top: 24.7579px; 
+    mix-blend-mode: overlay;
+    opacity: 1; 
+    position: absolute; 
+
+    width: 1495.87px; 
+    height: 786.258px;
+
+}
+
+/* z-index = 1 */
+
+#threeDlayerpreview {
+    background-image: url("/assets/3C_ASD90491013_3D.jpg"); 
+    background-repeat: repeat; 
+    background-size: 137px 137px;
+    display: block; 
+    height: 786.258px;
+    margin-left: 54.88px; 
+    margin-top: 24.7579px; 
+    mix-blend-mode: hard-light; 
+    opacity: 1; /* opacity 0 means off, invisible....*/
+    position: absolute; 
+    width: 1495.87px; 
+    z-index: 1;  
+    
+
+}
+
+#layershape {
+    background-image: url("/assets/3C_ASD90491013_HL.jpg"); 
+    background-repeat: repeat; 
+    background-size: 137px 137px;
+    display: block; 
+    height: 786.258px; 
+    margin-left: 54.88px; 
+    margin-top: 24.7579px;
+    mix-blend-mode: hard-light; 
+    opacity: 1;
+    position: absolute;  
+    width: 1495.87px;  
+    z-index: 1;
+}
+
+/* z-index = 2 */
+
+/* This is the texture */
+#texturelayerpreview {
+    background-repeat: repeat; 
+    background-size: 100% !important; 
+    background-image: url("/assets/texture_2k.jpg"); 
+    display: block; 
+    height: 786.258px; 
+    margin-left: 54.88px; 
+    margin-top: 24.7579px; 
+    mix-blend-mode: overlay;
+    opacity: 1; 
+    position: absolute; 
+    width: 1495.87px;
+    z-index: 2; 
+        
+}
+
+
+/* z-index = 3 */
+/* MASK */
+#texturelayerpreview2 {
+    /* background: #808080;  */
+    background-image: url("/assets/3C_ASD90491013_MASK.png");
+    background-repeat: repeat;
+    background-size: 137px 137px;
+    height: 786.258px;
+    display: block;
+    margin-left: 54.88px; 
+    margin-top: 24.7579px;
+    mix-blend-mode: normal;
+    opacity: 1; 
+    position: absolute; 
+    width: 1495.87px;
+    z-index: 0; /* by the way 0 looks so much better... */
+
+}
+
+/* z-index = 4 */
+#aginglayerpreview {
+    background-image: url(""); 
+    background-size: 2405.99px; 
+    display: block; 
+    height: 786.258px; 
+    margin-left: 54.88px; 
+    margin-top: 24.7579px;
+    mix-blend-mode: hard-light; 
+    opacity: 1;
+    position: absolute; 
+    width: 1495.87px; 
+    z-index: 4; 
+}
+
+/* z-index = 5 */
+#room1 {
+    display: inline; 
+    margin-left: 0%;
+    margin-top: 0px;
+    opacity: 1; 
+    position: relative; 
+    width: 100%;
+    z-index: 5;
+}
+        
+
+        
+        
+        
+</style>
+
+
+<div id="placeholder">
+    <div id="CLASS2"></div>
+    <div id="CLASS3"></div>
+    <div id="CLASS4"></div>
+    <div id="layershape"></div>
+    <div id="threeDlayerpreview"></div>
+    <!-- <div id="texturelayerpreview"></div> -->
+    <div id="texturelayerpreview2"></div>
+    <!-- <div id="aginglayerpreview"></div> -->
+    <!-- <div id="room1">
+        <img id="room1image" src="/assets/Room1.png" class="loading" data-was-processed="true">
+    </div> -->
+</div>
