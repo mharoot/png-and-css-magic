@@ -1,0 +1,96 @@
+#room1image {
+    position: absolute; 
+}
+
+/* This is the texture */
+#texturelayerpreview {
+    background-size: 20% !important; 
+    background-image: url("/assets/texture_2k.jpg"); 
+    display: block; 
+    mix-blend-mode: overlay;
+    opacity: 1; 
+    position: absolute; 
+    z-index: 0; 
+        
+}
+/* MASK */
+#texturelayerpreview2 {
+    background-image: url("/assets/3C_ASD90491013_MASK.png");
+    background-repeat: repeat;
+    display: block;
+    mix-blend-mode: normal;
+    opacity: 1  ; 
+    position: absolute; 
+    z-index: 1;
+}
+
+#CLASS2 {
+    z-index:2;
+    background: #6F8758;
+    background-image: url("/assets/3C_ASD90491013_CLASS2_spr.png"); 
+    background-repeat: repeat; 
+    mix-blend-mode: overlay;
+    opacity: 1; 
+    position: absolute; 
+}
+
+#CLASS3 {
+    z-index:3;
+    background: #C7BA7B;
+    background-image: url("/assets/3C_ASD90491013_CLASS3_spr.png"); 
+    background-repeat: repeat; 
+    mix-blend-mode: overlay;
+    opacity: 1; 
+    position: absolute; 
+
+}
+
+#CLASS4 {
+    z-index:4;
+    background: #DEC657;
+    background-image: url("/assets/3C_ASD90491013_CLASS4_spr.png"); 
+    background-repeat: repeat; 
+    mix-blend-mode: OVERLAY;
+    opacity: 1; 
+    position: absolute; 
+}
+
+/* HL */
+#layershape {
+    background-image: url("/assets/3C_ASD90491013_HL.jpg"); 
+    background-repeat: repeat; 
+    display: block; 
+    mix-blend-mode: hard-light; 
+    opacity: 1;
+    position: absolute;  
+    z-index: 5;
+}
+
+#aginglayerpreview {
+    background-image: url(""); 
+    display: block; 
+    mix-blend-mode: hard-light; 
+    opacity: 1;
+    position: absolute; 
+    z-index: 6; 
+}
+
+#threeDlayerpreview {
+    background-image: url("/assets/3C_ASD90491013_3D.jpg"); 
+    background-repeat: repeat; 
+    display: block; 
+    mix-blend-mode: hard-light; 
+    opacity: 1; 
+    position: absolute; 
+    z-index: 7;  
+}
+
+#room1 {
+    display: inline; 
+    margin-left: 0%;
+    margin-top: 0px;
+    opacity: 1; 
+    position: relative; 
+    width: 100%;
+    z-index: 8;
+}
