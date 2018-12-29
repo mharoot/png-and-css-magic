@@ -1,0 +1,185 @@
+<body>
+    <div style="margin-left:-1%; margin-top:-1%;" class="container">
+        <div id="CLASS2"></div>
+        <div id="CLASS3"></div>
+        <div id="CLASS4"></div>
+        <div id="layershape"></div>
+        <div id="threeDlayerpreview"></div>
+        <div id="texturelayerpreview"></div>
+        <div id="texturelayerpreview2"></div>
+        <div id="aginglayerpreview"></div>
+        <div id="room1">
+            <img id="room1image" src="http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/assets/Room1.png"  data-was-processed="true">
+        </div>
+    </div>
+<link href="http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/css/bootstrap.css">
+
+<style>
+    #room1image {
+        position: absolute; 
+        height: 786.258px; 
+        margin-left: 54.88px;
+        margin-top: 24.7579px;   
+        width: 1495.87px; 
+    
+    }
+    /* This is the texture */
+    #texturelayerpreview {
+        background-size: 20% !important; 
+        background-image: url("http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/assets/texture_2k.jpg"); 
+        display: block; 
+        height: 786.258px; 
+        margin-left: 54.88px; 
+        margin-top: 24.7579px;  
+        mix-blend-mode: normal;
+        opacity: 1; 
+        position: absolute; 
+        width: 1495.87px; 
+        z-index: 0; 
+            
+    }
+    /* MASK */
+    #texturelayerpreview2 {
+        background-image: url("http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/assets/3C_ASD90491013_MASK.png");
+        background-repeat: repeat;
+        background-size: 137px 137px;
+        height: 786.258px;
+        display: block;
+        margin-left: 54.88px; 
+        margin-top: 24.7579px;
+        mix-blend-mode: normal;
+        opacity: 1  ; 
+        position: absolute; 
+        width: 1495.87px;
+        z-index: 1; /* by the way 0 looks so much better... */
+    
+    }
+    
+    #CLASS2 {
+        z-index:2;
+    
+        background: #6F8758;
+        background-image: url("http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/assets/3C_ASD90491013_CLASS2_spr.png"); 
+        background-repeat: repeat; 
+        background-size: 137px 137px; 
+        
+        margin-left: 54.88px; 
+        margin-top: 24.7579px; 
+        mix-blend-mode: overlay;
+        opacity: 1; 
+        position: absolute; 
+        
+        width: 1495.87px; 
+        height: 786.258px;
+    
+    }
+    
+    #CLASS3 {
+        z-index:3;
+        
+        background: #C7BA7B;
+        background-image: url("http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/assets/3C_ASD90491013_CLASS3_spr.png"); 
+        background-repeat: repeat; 
+        background-size: 137px 137px;
+        
+        margin-left: 54.88px; 
+        margin-top: 24.7579px; 
+        mix-blend-mode: overlay;
+        opacity: 1; 
+        position: absolute; 
+    
+        width: 1495.87px; 
+        height: 786.258px;
+    
+    }
+    
+    #CLASS4 {
+        z-index:4;
+    
+        background: #DEC657;
+        background-image: url("http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/assets/3C_ASD90491013_CLASS4_spr.png"); 
+        background-repeat: repeat; 
+        background-size: 137px 137px;
+        
+        margin-left: 54.88px; 
+        margin-top: 24.7579px; 
+        mix-blend-mode: overlay;
+        opacity: 1; 
+        position: absolute; 
+    
+        width: 1495.87px; 
+        height: 786.258px;
+    
+    }
+    /* HL */
+    #layershape {
+        background-image: url("http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/assets/3C_ASD90491013_HL.jpg"); 
+        background-repeat: repeat; 
+        background-size: 137px 137px;
+        display: block; 
+        height: 786.258px; 
+        margin-left: 54.88px; 
+        margin-top: 24.7579px;
+        mix-blend-mode: hard-light; 
+        opacity: 1;
+        position: absolute;  
+        width: 1495.87px;  
+        z-index: 5;
+    }
+    
+    #aginglayerpreview {
+        background-image: url(""); 
+        background-size: 1495.87px; 
+        display: block; 
+        height: 786.258px; 
+        margin-left: 54.88px; 
+        margin-top: 24.7579px;
+        mix-blend-mode: hard-light; 
+        opacity: 1;
+        position: absolute; 
+        width: 1495.87px; 
+        z-index: 6; 
+    }
+    #threeDlayerpreview {
+        background-image: url("http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/assets/3C_ASD90491013_3D.jpg"); 
+        background-repeat: repeat; 
+        background-size: 137px 137px;
+        display: block; 
+        height: 786.258px;
+        margin-left: 54.88px; 
+        margin-top: 24.7579px; 
+        mix-blend-mode: hard-light; 
+        opacity: 1; /* opacity 0 means off, invisible....*/
+        position: absolute; 
+        width: 1495.87px; 
+        z-index: 7;  
+        
+    
+    }
+    
+    /* z-index = 5 */
+    #room1 {
+        display: inline; 
+        
+        opacity: 1; 
+        position: relative; 
+       
+        height: 786.258px; 
+        margin-left: 0px; 
+        margin-top: 24.7579px;  
+        width: 1495.87px; 
+    
+        z-index: 8;
+    }
+            
+            
+            
+    </style>
+
+<script src="http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/js/jQuery.js"></script>
+<!-- <script src="http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/js/boostrap.js"></script> -->
+
+<!-- <script src="http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/js/digitaldecor.js"></script> -->
+
+<script src="http://192.168.1.37:8888/png-and-css-magic/colorize-showroom-resize/js/setDimensions.js"></script>
+</body>
